@@ -210,3 +210,5 @@ window.addEventListener('DOMContentLoaded', () => {
     eachItem.addEventListener('click', cellClickHandler);
   });
 }); // this is for the DOMContentLoaded
+
+console.log('test if netlify is working');
