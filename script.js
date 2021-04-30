@@ -211,4 +211,4 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 }); // this is for the DOMContentLoaded
 
-console.log('test if netlify is working');
+console.log('github and netlify connected');
