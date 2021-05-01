@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   /* background-color: #707070; */
-  background-color: #404040;
+  background-color: #ffffff;
   font-family: myFontMed;
 }
 
@@ -142,4 +142,56 @@ footer {
     width: 100%;
     margin: 0%;
   }
+}
+
+/* dark mode */
+.darkmode_container {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+.label {
+  position: relative;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 50px;
+  height: 26px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.ball {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-color: #fff;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.dark {
+  background-color: #292c35;
 }

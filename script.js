@@ -212,3 +212,9 @@ window.addEventListener('DOMContentLoaded', () => {
 }); // this is for the DOMContentLoaded
 
 console.log('github and netlify connected');
+
+// dark mode
+const checkbox = document.querySelector('#checkbox');
+checkbox.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+});
