@@ -217,10 +217,17 @@ console.log('github and netlify connected');
 const checkbox = document.querySelector('#checkbox');
 const createdBy = document.querySelector('.createdBy');
 const container = document.querySelector('.container');
+const title = document.querySelector('.title');
 const body = document.querySelector('body');
+const status = document.querySelector('.status');
+const reset = document.querySelector('.reset');
+const historyBtns = document.querySelector('.historyBtns');
 checkbox.addEventListener('change', () => {
-  container.style.backgroundColor = '#101010';
   body.classList.toggle('dark');
   createdBy.classList.toggle('dark');
   container.classList.toggle('dark');
+  title.classList.toggle('dark2');
+  status.classList.toggle('dark2');
+  reset.classList.toggle('dark2');
+  historyBtns.classList.toggle('dark2');
 });
