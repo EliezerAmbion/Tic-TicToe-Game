@@ -1,6 +1,7 @@
 :root {
   --main-color: #202020;
   --secondary-color: #00aeae;
+  --light-color-bgc: #ffffff;
 }
 
 * {
@@ -16,13 +17,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   /* background-color: #707070; */
-  background-color: #ffffff;
+  background-color: var(--light-color-bgc);
   font-family: myFontMed;
 }
 
 .container {
-  background-color: #101010;
+  background-color: var(--light-color-bgc);
   border-radius: 0.8em;
   padding: 1.5em;
   /* box-shadow: 2px 2px 5px #f0f0f0; */
@@ -124,9 +126,7 @@ body {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  margin-top: 1.5rem;
   color: var(--main-color);
 }
 
