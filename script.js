@@ -215,6 +215,10 @@ console.log('github and netlify connected');
 
 // dark mode
 const checkbox = document.querySelector('#checkbox');
+const createdBy = document.querySelector('.createdBy');
+const container = document.querySelector('.container');
 checkbox.addEventListener('change', () => {
   document.body.classList.toggle('dark');
+  createdBy.classList.toggle('dark');
+  container.classList.toggle('dark');
 });

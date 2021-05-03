@@ -1,3 +1,8 @@
+:root {
+  --main-color: #202020;
+  --secondary-color: #00aeae;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,6 +10,7 @@
 }
 
 body {
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -19,7 +25,8 @@ body {
   background-color: #101010;
   border-radius: 0.8em;
   padding: 1.5em;
-  box-shadow: 2px 2px 5px #f0f0f0;
+  /* box-shadow: 2px 2px 5px #f0f0f0; */
+  box-shadow: 2px 2px 5px var(--secondary-color);
 }
 
 /* header */
@@ -47,14 +54,14 @@ body {
 }
 
 .reset:hover {
-  color: #00aeae;
+  color: var(--secondary-color);
 }
 
 .board-grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 2px;
-  background-color: #101010;
+  background-color: var(--main-color);
 }
 
 /* td {
@@ -69,60 +76,58 @@ body {
 .cell {
   width: 7em;
   height: 7em;
-  background-color: #202020;
+  background-color: #fff;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-
 .historyBtns {
   visibility: hidden;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  height: 20%;
-  margin-left: 2rem;
+  align-items: center;
   color: #f0f0f0;
-  font-size: 1.5rem;
-  font-family: myFontLight;
 }
 
 .prev {
-  border: 2px solid #f0f0f0;
+  margin-top: 10px;
+  border: 2px solid var(--secondary-color);
   padding: 0 0.5em;
   cursor: pointer;
 }
 
 .next {
-  border: 2px solid #f0f0f0;
+  margin-top: 10px;
+  border: 2px solid var(--secondary-color);
   padding: 0em 0.5em;
   cursor: pointer;
 }
 
 .X::before {
   content: '×';
-  font-size: 5rem;
-  color: #f0f0f0;
+  font-size: 7rem;
+  color: #202020;
 }
 
 .O::before {
   content: '○';
-  font-size: 5rem;
+  font-size: 7rem;
   color: #00aeae;
 }
 
 .prev:hover,
 .next:hover {
-  background-color: #00aeae;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
 }
 
 footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  color: #f0f0f0;
+  color: var(--main-color);
 }
 
 @font-face {
@@ -144,13 +149,13 @@ footer {
     flex-direction: column;
   }
 
-  .historyBtns {
+  /* .historyBtns {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
     margin: 0%;
-  }
+  } */
 }
 
 /* dark mode */
@@ -203,4 +208,5 @@ footer {
 
 .dark {
   background-color: #292c35;
+  color: var(--secondary-color);
 }
