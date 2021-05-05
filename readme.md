@@ -1,10 +1,7 @@
 ## Tic Tac Toe Game
 
-![White Version]
-(showcase/show_white.png)
-
-![Black Version]
-(showcase/show_black.png)
+<img src="showcase/show_black.png">
+<img src="showcase/show_white.png">
 
 You can view and play the game here:
 https://eliezerambion-tic-tac-toe-game.netlify.app/
